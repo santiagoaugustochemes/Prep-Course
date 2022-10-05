@@ -11,19 +11,24 @@ function obtenerMayor(x, y) {
     return x || y 
   } else { 
     return y
-   } 
-} 
+   }
+}
+
+ 
 
 function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
-if (edad >= 18){
+
+ if (edad >= 18){
 return "Allowed"
  } else {
   return "Not allowed"
  } 
 }
+
+
   
 function conection(status) {
   //Recibimos un estado de conexión de un usuario representado por un valor numérico. 
@@ -40,6 +45,7 @@ function conection(status) {
   }
 }
 
+
 function saludo(idioma) {
   // Devuelve un saludo en tres diferentes lenguajes:
   // Si "idioma" es "aleman", devuelve "Guten Tag!"
@@ -47,7 +53,7 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
-  if (idioma === "aleman"){
+if (idioma === "aleman"){
   return "Guten Tag!"
   } else if (idioma === "mandarin"){
     return "Ni Hao!"
@@ -57,6 +63,7 @@ function saludo(idioma) {
     return "Hola!"
    } 
 }
+
 
 function colors(color) {
   //La función recibe un color. Devolver el string correspondiente:
@@ -85,6 +92,8 @@ function colors(color) {
     } 
 }
 
+
+
 function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
@@ -94,6 +103,8 @@ function esDiezOCinco(numero) {
   } 
     return false
    }
+
+
 
 
 
@@ -121,6 +132,7 @@ if (Math.floor (numero) === numero){
   return false
 }
 
+
 function fizzBuzz(numero) {
   // Si "numero" es divisible entre 3, devuelve "fizz"
   // Si "numero" es divisible entre 5, devuelve "buzz"
@@ -145,7 +157,8 @@ function operadoresLogicos(num1, num2, num3) {
   //Si alguno de los tres números es negativo, retornar ---> "Hay negativos"
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
-  //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
+  //Si no se cumplen ninguna de las condiciones anteriores, retornar false.
+
   if (num1 === 0 || num2 === 0 || num3 === 0){
     return "Error"
   }
@@ -162,13 +175,16 @@ function operadoresLogicos(num1, num2, num3) {
   return false;
 }
 
+
 function esPrimo(numero) {
   // Devuelve "true" si "numero" es primo
   // De lo contrario devuelve "falso"
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  if (numero===0 || numero===1) { 
+  
+
+if (numero===0 || numero===1) { 
     return false;
     }
 
@@ -180,6 +196,8 @@ function esPrimo(numero) {
     return true;
  }
 
+
+  
 function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
@@ -194,7 +212,8 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí 
-let tabla = [ ]
+  
+  let tabla = [ ]
 
   for (let i = 0; i <= 10; i++) {
     const resultado = 6*i
@@ -203,19 +222,20 @@ let tabla = [ ]
   return tabla 
 }
 
+
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
   if (numero >= 100 && numero < 1000){
-    return true 
-  } 
-  return false
-}
+    return true
+  } return false
+  }
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+   
   let contador = 0
   let numeroAumentado = numero
 
@@ -225,6 +245,7 @@ function doWhile(numero) {
   } while (contador < 8);
   return numeroAumentado
 }
+
 
 
 // No modificar nada debajo de esta línea
